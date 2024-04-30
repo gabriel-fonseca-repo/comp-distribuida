@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Locust",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "locust",
+      "args": [
+        "-f",
+        "${workspaceFolder}/locust_scripts/locustfile.py",
+        "--headless",
+        "--users=5"
+      ],
+      "console": "integratedTerminal",
+      "gevent": true
+    }
+  ]
+}
